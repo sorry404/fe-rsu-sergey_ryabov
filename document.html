@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=encoding name">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Text</title>
 </head>
 <body>
@@ -22,28 +22,32 @@
   <li>C</li>
   <li>D</li>
 </ul> 
-<div style = "background:green";>
+<div style = "background:green">
 <h3>Description list</h3>
-Name
-Godzila
-Born
-1952
-Bithplace
-Japan
-Color
-Green
+<dl>
+  <dt>Name</dt>
+  <dd>Godzila</dd>
+  <dt>Born</dt>
+  <dd>1952</dd>
+  <dt>Bithplace</dt>
+  <dd>Japan</dd>
+  <dt>Color</dt>
+<dd>Green</dd>
+</dl>
 <h2>Nested list</h2>
 <ul>
   <li>List item one</li>
-  <li>List item two with subiteams</li>
-  <ul>
-    <li>Subiteam</li>
-    <ul>
-      <li>SubSubiteam</li>
-      <li>SubSubiteam</li>
-	</ul>
-	<li>Subiteam 2</li>
-  </ul>	
+  <li>List item two with subitams
+   <ul>
+    <li>Subitems
+      <ul>
+        <li>SubSubitem</li>
+        <li>SubSubitem</li>
+	  </ul>
+	</li>
+	<li>Subitem 2</li>
+   </ul>
+  </li>  
   <li>Final List iteam</li>
 </ul>
 </div>
@@ -62,11 +66,14 @@ Nam eleifend tellus quis magna faucibus malesuada.<br>
 Nunc et elit eget felis viverra dapibus eu id erat.<br>
 Donec accumsan dolor non orci consectetur malesuada.<br>
 Praesent et nisi vel nisl fringilla porttitor eget vitae ligula.<br>
+</p>
 <hr>
 <h2>Tables</h2>
 <table>
+<tr>
 <th>zag1</th>
 <th>zag2</th>
+</tr>
 <tr>
  <td>re1</td>
  <td>re2</td>
@@ -78,7 +85,7 @@ Praesent et nisi vel nisl fringilla porttitor eget vitae ligula.<br>
 </table>
 <hr>
 <h2>Image</h2>
-<img src="cat.jpg">
+<img src="cat.jpg" alt="cat">
 <hr>
 <h2>Pre tag</h2>
 <pre>
