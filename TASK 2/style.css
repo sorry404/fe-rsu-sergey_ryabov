@@ -1,0 +1,22 @@
+.table1{
+    width:100%; 
+    border-spacing:3;
+}
+.table2{
+    width:100%; 
+    height:450;
+    border-spacing:8; 
+    padding:8;
+}
+.table3{
+	width:100%;
+}
+.myframe{
+	vertical-align:top; 
+	background-color:#eee;
+	width:100%;
+	height:450;
+}
+.colortheme{
+	background-color:#b0c4de;
+}
