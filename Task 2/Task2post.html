@@ -9,24 +9,21 @@
 <form action="http://httpbin.org/post" method="post">
    	<fieldset>
     	<legend>Personal data:</legend>
-    	Fist Name:<br>
-    	<input type="text" name="lastname" ><br>
-    	Surname:<br>
-    	<input type="text" name="firstname" ><br>
-
-    	Sex
-    	<input type="radio" name="sex" value="male" checked>Male<br>
-    	<input type="radio" name="sex" value="female">Female<br>
-
+    	<table>
+        	<tr><td>Fist Name:</td><td><input type="text" name="lastname"></td></tr>
+        	<tr><td>Surname:</td><td><input type="text" name="firstname"></td></tr>
+    		<tr><td></td><td><input type="radio" name="sex" value="male" checked>Male</td></tr>
+    		<tr><td>Sex</td></tr>
+    		<tr><td></td><td><input type="radio" name="sex" value="female">Female</td></tr>
+		</table>
   	</fieldset>
     <fieldset>
     	<legend>Contact Information:</legend>
-   		<p>Site
-   		<input type="url" name="site"></p>
-   		<p>E-mail
-   		<input type="email" name="email"></p>
-    	<p>Phone
-    	<input type="tel" name="phone"></p>
+    	<table>
+   		<tr><td>Site</td><td><input type="url" name="site"></td></tr>
+   		<tr><td>E-mail</td><td><input type="email" name="email"></td></tr>
+    	<tr><td>Phone</td><td><input type="tel" name="phone"></td></tr>
+    	</table>
     </fieldset>
      	<button type="submit">Отправить</button>
 </form>

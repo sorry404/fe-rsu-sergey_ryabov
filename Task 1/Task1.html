@@ -33,8 +33,8 @@
 The simantic Web
 <p style="text-indent: 25px;">This direction of development of the world wide web, the aim of which is to provide iformation in a form suitable for machne processing </p> 
 <hr>
-<p align="center">CCS Generated content for rseudo-elements</p>
-<table border="1">
+<content>CCS Generated content for rseudo-elements</content>
+<table border="1" width="100%">
 	<thead>
 		<tr>
     		<th>IE</th><th>Firefox</th><th>Chrome</th><th>Safari</th><th>Opera</th><th>iOS Safari</th><th>Opera Mini</th><th>Android Browser</th><th>Chrome for Android</th>
@@ -70,25 +70,24 @@ The simantic Web
 <form>
    	<fieldset>
     	<legend>Personal data:</legend>
-    	Surname:<br>
-    	<input type="text" name="firstname" value="Mickey">
-    	<br>
-    	Fist Name:<br>
-    	<input type="text" name="lastname" value="Mouse">
-    	<br>
-    	Middle name:<br>
-    	<input type="text" name="middlename" value="Mousovich">
+    	<p>Surname:
+    	<input type="text" name="firstname" value=""></p>
+    	<p>Fist Name:
+    	<input type="text" name="lastname" value=""></p>
+    	<p>Middle name:
+    	<input type="text" name="middlename" value=""></p>
 
-    	<br>
+		<p>
     	You are
     	<input type="radio" name="sex" value="male" checked>male
     	<input type="radio" name="sex" value="female">female
-    	<br>
-
+		</p>
+		<p>			
     	Age
-    	<input type="number" list="age" min="18" max="101">
+    	<input type="number" name="age" min="18" max="101">
     	<datalist id="age"></datalist>
-    	<br>
+    	</p>
+    	<p>
     	Country of Residence
     	<input list="country">
     	<datalist id="country">
@@ -142,16 +141,18 @@ The simantic Web
 		<option value="Шри-Ланка">Шри-Ланка</option>
 		<option value="ЮАР">ЮАР</option>
 		<option value="Ямайка">Ямайка</option></datalist>
-    	<br>
-
+    	</p>
+    	<p>
     	City
-    	<input type="checkbox" name="city" value="ryazan" checked>Ryazan
+    	<input type="checkbox" name="city" value="ryazan">Ryazan
     	<input type="checkbox" name="city" value="moscow">Moscow
-		<br>
-    	Photography: <input type="file" name="img" >
-    	<br>
-
-		<select name="cars[]" multiple>
+		</p>
+		<p>
+    	Photography: <input type="file" name="img"  >
+    	</p>
+    	<hr>
+    	<p>
+		<select name="cars[]" size="7" multiple>
 		    <optgroup label="Tehnologies">
     		<option value="Web_Master">Web Master</option>
    	 		<option value="DatabaseAdm">Database Administrator</option>
@@ -160,20 +161,20 @@ The simantic Web
     		<option value="Management_accounting">Management accounting</option>
     		<option value="BudgetingPlanning">Budgeting and planning</option>
     	</select>
-		<br>
+		</p>
 		<input type="range" min="0" max="100" step="1" value="50"> 
 		<br>
-  		<textarea name="message" rows="10" cols="30">Tell us about youself...</textarea>
+  		<textarea name="message" rows="10" cols="50">Tell us about youself...</textarea>
   	</fieldset>
 
     <fieldset>
     <legend>Contact Information:</legend>
-   		Site<input type="url" name="site"><br>
-   		E-mail<input type="email" name="email"><br>
-    	Phone<input type="tel" name="phone"><br>
+   		<p>Site <input type="url" name="site"></p>
+   		<p>E-mail <input type="email" name="email"></p>
+    	<p>Phone <input type="tel" name="phone"></p>
     </fieldset>
-    Password:
-    	<input type="password" name="pass" required><br>
+    <p> Password:
+    	<input type="password" name="pass" required></p>
      	<button type="submit">Отправить</button>
      	<button type="reset">Сбросить</button>
 </form>
