@@ -12,10 +12,10 @@
     		<tr><td>Surname:</td> <td><input type="text" name="firstname"></td> </tr>
     		<tr><td>Fist Name:</td> <td><input type="text" name="lastname"></td></tr>
     		<tr><td>Middle name:</td> <td><input type="text" name="middlename"></td></tr>
-    	    <tr><td></td><td><input type="radio" name="sex" value="male" checked>Male</td></tr>
-    		<tr><td>Sex</td></tr>
-    		<tr><td></td><td><input type="radio" name="sex" value="female">Female</td></tr>
-			<tr><td>Age</td> <td><input type="number" list="age" min="18" max="101"><datalist id="age"></datalist></td> </tr>
+    	    <tr><td rowspan="3">Sex</td></tr>
+    		<tr><td><input type="radio" name="sex" value="male" checked>Male</td></tr>
+    		<tr><td><input type="radio" name="sex" value="female">Female</td></tr>
+			<tr><td>Age</td> <td><input type="number" list="age" min="18" max="101"><datalist id="age"></datalist></td></tr>
     	<tr>
     		<td>Country of Residence</td>
     		<td>
@@ -101,7 +101,7 @@
 			<td><input type="range" min="0" max="100" step="1" value="60"></td>
 		</tr>
 		</table>
-  		<textarea name="message" rows="10" cols="50">Tell us about youself...</textarea>
+  		<textarea name="message" rows="10" cols="50" placeholder="Tell us about youself..."></textarea>
   	</fieldset>
 
     <fieldset>
