@@ -70,12 +70,12 @@ The simantic Web
 <form>
    	<fieldset>
     	<legend>Personal data:</legend>
-    	<p>Surname:
-    	<input type="text" name="firstname" value=""></p>
-    	<p>Fist Name:
-    	<input type="text" name="lastname" value=""></p>
-    	<p>Middle name:
-    	<input type="text" name="middlename" value=""></p>
+    	<label><p>Surname:
+    	<input type="text" name="firstname" value=""></p></label>
+    	<label><p>Fist Name:
+    	<input type="text" name="lastname" value=""></p></label>
+    	<label><p>Middle name:
+    	<input type="text" name="middlename" value=""></p></label>
 
 		<p>
     	You are
@@ -83,12 +83,12 @@ The simantic Web
     	<label><input type="radio" name="sex" value="female">female</label>
 		</p>
 		<p>			
-    	Age
-    	<input type="number" name="age" min="18" max="101">
+    	<label>Age
+    	<input type="number" name="age" min="18" max="101"></label>
     	<datalist id="age"></datalist>
     	</p>
     	<p>
-    	Country of Residence
+    	<label>Country of Residence
     	<input list="country">
     	<datalist id="country">
     	<option value="Абхазия">Абхазия</option>
@@ -140,7 +140,7 @@ The simantic Web
 		<option value="Швеция">Швеция</option>
 		<option value="Шри-Ланка">Шри-Ланка</option>
 		<option value="ЮАР">ЮАР</option>
-		<option value="Ямайка">Ямайка</option></datalist>
+		<option value="Ямайка">Ямайка</option></datalist></label>
     	</p>
     	<p>
     	City
@@ -169,12 +169,12 @@ The simantic Web
 
     <fieldset>
     <legend>Contact Information:</legend>
-   		<p>Site <input type="url" name="site"></p>
-   		<p>E-mail <input type="email" name="email"></p>
-    	<p>Phone <input type="tel" name="phone"></p>
+   		<label><p>Site <input type="url" name="site"></p></label>
+   		<label><p>E-mail <input type="email" name="email"></p></label>
+    	<label><p>Phone <input type="tel" name="phone"></p></label>
     </fieldset>
-    <p> Password:
-    	<input type="password" name="pass" required></p>
+    <p><label> Password:
+    	<input type="password" name="pass" required></p></label>
      	<button type="submit">Отправить</button>
      	<button type="reset">Сбросить</button>
 </form>

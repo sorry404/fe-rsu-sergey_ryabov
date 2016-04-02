@@ -9,17 +9,17 @@
    	<fieldset>
     	<legend>Personal data:</legend>
     	<table>
-    		<tr><td>Surname:</td> <td><input type="text" name="firstname"></td> </tr>
-    		<tr><td>Fist Name:</td> <td><input type="text" name="lastname"></td></tr>
-    		<tr><td>Middle name:</td> <td><input type="text" name="middlename"></td></tr>
+    		<tr><td><label for="surname">Surname:</label></td> <td><input type="text" id="surname"></td> </tr>
+    		<tr><td><label for="lastname">Fist Name:</label></td> <td><input type="text" id="lastname"></td></tr>
+    		<tr><td><label for="middlename">Middle name:</label></td> <td><input type="text" id="middlename"></td></tr>
     	    <tr><td rowspan="3">Sex</td></tr>
-    		<tr><td><input type="radio" name="sex" value="male" checked>Male</td></tr>
-    		<tr><td><input type="radio" name="sex" value="female">Female</td></tr>
-			<tr><td>Age</td> <td><input type="number" list="age" min="18" max="101"><datalist id="age"></datalist></td></tr>
+    		<tr><td><label><input type="radio" name="sex" value="Male" checked>Male</label></td></tr>
+    		<tr><td><label><input type="radio" name="sex" value="Female">Female</label></td></tr>
+			<tr><td><label for="age">Age</label></td> <td><input id="age" type="number" min="18" max="101"></td></tr>
     	<tr>
-    		<td>Country of Residence</td>
+    		<td><label for="cor">Country of Residence</label></td>
     		<td>
-    			<input list="country">
+    			<input list="country" id="cor">
     			<datalist id="country">
     			<option value="Абхазия">Абхазия</option>
 				<option value="Австралия">Австралия</option>
@@ -75,7 +75,7 @@
     	</tr>
     	<tr>
     		<td>City</td>
-    		<td><input type="checkbox" name="city" value="ryazan">Ryazan<input type="checkbox" name="city" value="moscow">Moscow</td>
+    		<td><label><input type="checkbox" id="cityR" value="ryazan">Ryazan</label><label><input type="checkbox" id="cityM" value="moscow">Moscow</label></td>
     	</tr>
 		<tr>
     		<td>Photography:</td> <td><input type="file" name="img"></td>
@@ -107,12 +107,12 @@
     <fieldset>
     <legend>Contact Information:</legend>
     <table>
-   		<tr><td>Site</td><td><input type="url" name="site"></td></tr>
-   		<tr><td>E-mail</td><td><input type="email" name="email"></td></tr>
-    	<tr><td>Phone</td><td><input type="tel" name="phone"></td></tr>
+   		<tr><td><label for="site">Site</label></td><td><input type="url" id="site"></td></tr>
+   		<tr><td><label for="email">E-mail</label></td><td><input type="email" id="email"></td></tr>
+    	<tr><td><label for="phone">Phone</label></td><td><input type="tel" id="phone"></td></tr>
     </table>
     </fieldset>
-    <p>Password:<input type="password" name="pass" required></p>
+    <p><label for="pass">Password:</label><input type="password" id="pass" required></p>
      	<button type="submit">Отправить</button>
      	<button type="reset">Сбросить</button>
 </form>
