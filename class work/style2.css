@@ -1,0 +1,34 @@
+
+.arrow-box{
+	background-color: #88B7D5;
+	color:white;
+	position: relative;
+	padding: 10px;
+	border: 5px solid #C5E3F6;
+	margin: 40px;
+}
+
+.arrow-box:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -80;
+    left: 50%;
+    border: 40px solid transparent;
+    border-bottom-color:  #C5E3F6;
+
+}
+.arrow-box:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -72;
+    left: 50%;
+    border: 40px solid transparent;
+    border-bottom-color: #88B7D5;
+
+

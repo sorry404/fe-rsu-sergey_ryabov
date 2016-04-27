@@ -1,11 +1,85 @@
-p{
-	font-size:20px;
-	background-color: #CAD8D0;
-	padding: 20px;
+.my-flex-container{
+	background-image: url(bg.png);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row; /*направление гл оси*/
+	align-items: stretch;
+	justify-content: space-between;
 }
-@media (max-width:500px){
-p{
-	font-size:28px;
+.my-flex-block_left{
+	display: flex;
+	flex-wrap: nowrap; /*располагать в одну строку*/
+	flex-direction: row;/*направление гл оси*/
+	justify-content:flex-start; /* определяет выравнивание относительно главной оси*/
+	align-items:center;/*align-items отвечает за выравнивание по перпендикулярной оси.*/
+	flex-basis: 320px;
+
+}
+.my-flex-block_right{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items:stretch;
+	/*background-color: red;*/
 }
 
+.button{
+	display: flex;
+  	justify-content: center;
+	align-items:center;
+	height: 22px;
+	width: 22px;
+	background-color: #387AB1;
+	margin-right: 2px;
+}
+
+#countOne{
+	width: 14px;
+	height: 14px;
+	background: red;
+	border-radius: 7px;
+}
+
+#countTwo{
+	width: 48px;
+	height: 14px;
+	background: red;
+	border-radius: 24px / 7px;
+}
+#countThree{
+	width: 14px;
+	height: 14px;
+	background: red;
+	border-radius: 7px;
+}
+
+span{
+	font-size: 11px;
+}
+
+.my-flex-block_left div:nth-child(1){
+	display: flex;
+	flex-basis: 50px;
+}
+.my-flex-block_left div:nth-child(2){
+	display: flex;
+	flex-basis: 70px;
+}
+.my-flex-block_left div:nth-child(3){
+	display: flex;
+	flex-basis: 50px;
+}
+
+.my-flex-block_right div:nth-child(3){
+	background-color: #18181D;
+	color: white;
+	width: 70px;
+	margin-right: 0px;
+	font-size: 12px;
+	font-weight: 900;
+}
+
+div.button:hover{
+background-color: red;
 }

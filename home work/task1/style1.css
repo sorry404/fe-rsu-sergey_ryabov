@@ -1,16 +1,47 @@
-button{
-  background: linear-gradient(to top, #B2B8DA 0%, #5B63E7 50%, #B2B8DA 100%);
-  border-radius:  15px; 
-  color: white;
-  width: 185px;
-  height: 55px;
-  border: 4px double white;
-box-shadow: 0 0 1px rgba(0,89,81,1);
-  font-size: 22px;
-  font-family: Arial;
-  font-weight: 500;
+ul.nav span, label.on, input {
+  display: none;
+  list-style-type:none;
 }
-button:hover{
-box-shadow: 0 0 10px  rgba(0,89,81,1);   
-transition: all .3s ease-in-out;
+
+ul.nav input:checked + label + span {
+  display: block;
+}
+
+ul.nav li {
+  position: relative;
+  list-style-type:none;
+}
+
+label{
+	background-color: #35BAF6;
+	border: 2px solid #03A9F4;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	color:white;
+	text-align: right;
+	font-size: 19px;
+	padding-right: 32px;
+	padding-left: 32px;
+
+}
+span{
+	background-color: #35BAF6;
+	border: 2px solid #03A9F4;
+	color:white;
+	width: 140px;
+	text-align: center;
+}
+li{
+	height: 26px;
+}
+label:hover{
+	box-shadow: 0 0 10px rgba(3,169,244,0.5);
+}
+li:hover{
+	background-color: #03A9F4;
+}
+a{
+	color:white;
+	text-decoration:none;
+	font-size: 19px;
 }
