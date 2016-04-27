@@ -1,0 +1,16 @@
+button{
+  background: linear-gradient(to top, #B2B8DA 0%, #5B63E7 50%, #B2B8DA 100%);
+  border-radius:  15px; 
+  color: white;
+  width: 185px;
+  height: 55px;
+  border: 4px double white;
+box-shadow: 0 0 1px rgba(0,89,81,1);
+  font-size: 22px;
+  font-family: Arial;
+  font-weight: 500;
+}
+button:hover{
+box-shadow: 0 0 10px  rgba(0,89,81,1);   
+transition: all .3s ease-in-out;
+}

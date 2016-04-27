@@ -1,0 +1,53 @@
+h1{  
+	font-family: Arial, serif;
+	text-align:  center;
+}
+span{
+  
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+}
+#t1{
+  animation-name: shadow1;
+}
+#t2{
+  animation-name: shadow2;
+}
+#t3{
+  animation-name: shadow3;
+}
+@keyframes shadow1{
+  0%{
+    opacity: 1.0;
+  }
+  50%{
+    opacity: 1.0;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}
+@keyframes shadow2{
+  0%{
+    opacity: 1.0;
+  }
+  50%{
+    opacity: 1.0;
+  }
+  100%{
+    opacity:  0.0001;
+  }
+}
+@keyframes shadow3{
+  0%{
+    opacity: 1.0;
+  }
+  50%{
+    opacity: 0.0001;
+  }
+  100%{
+    opacity:  0.0001;
+  }
+}

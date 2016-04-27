@@ -1,0 +1,15 @@
+ div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #00B699; /* Старые браузеры */
+    background: radial-gradient(#00B699, 0);
+    margin:0 auto;
+   }
+
+ td{
+ 	height: 150px;
+    width: 200px;
+   	border: 1px solid;
+    border-color: #C4C4C4;
+   }

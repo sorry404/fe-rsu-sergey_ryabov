@@ -1,0 +1,30 @@
+a{
+	text-decoration:none;
+}
+
+.class {
+	line-height: 1;
+    display: inline-block;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+span:after{
+content: "|";
+color: red;}
+span:hover:after{
+	opacity: 0.00001;
+}
+.class:after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: blue;
+    transition: width .3s ease-in-out;
+
+}
+.class:hover:after,
+.class:focus:after {
+    width: 100%;
+}
