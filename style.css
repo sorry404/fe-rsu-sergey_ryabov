@@ -1,0 +1,97 @@
+@font-face {
+font-family: 'Tioem-Handwritten';
+font-style: normal;
+font-weight: normal;
+src: local('Tioem-Handwritten'), url('Tioem-Handwritten.woff') format('woff');
+}
+
+.border{
+
+	border: 3px dotted black;
+	width: 400px;
+
+}
+.frame{
+	height:900px;
+
+
+}
+iframe{
+	width: 400px;
+	height: 300px;
+	background-size: 400px;
+	background-color: #F3F3F3;
+	background-image:linear-gradient(-45deg,transparent 5%, #EAEAEA 5%,
+											#EAEAEA 10%, transparent 10%,
+											transparent 15%, #EAEAEA 15%,
+											#EAEAEA 20%, transparent 20%, 
+											transparent 25%, #EAEAEA 25%, 
+											#EAEAEA 30%, transparent 30%, 
+											transparent 35%, #EAEAEA 35%, 
+											#EAEAEA 40%, transparent 40%,
+											transparent 45%, #EAEAEA 45%,
+											#EAEAEA 50%, transparent 50%,
+											transparent 55%, #EAEAEA 55%,
+											#EAEAEA 60%, transparent 60%,
+											transparent 65%, #EAEAEA 65%,
+											#EAEAEA 70%, transparent 70%,
+											transparent 75%, #EAEAEA 75%,
+											#EAEAEA 80%, transparent 80%,
+											transparent 85%, #EAEAEA 85%,
+											#EAEAEA 90%, transparent 90%,
+											transparent 95%, #EAEAEA 95%,
+											#EAEAEA 100%, transparent 100%);
+	}
+
+
+h1{
+	font-family:'Tioem-Handwritten';
+	text-align: center;
+	font-weight:normal;
+	font-size:42px;
+	
+}
+#iputToDo{
+border-radius:4px; 
+width: 290px;
+height: 25px;
+border:2px solid black;
+font-family:'Tioem-Handwritten';
+font-size:24px;
+position: relative;
+top:20px;
+}
+
+button{
+	position: relative;
+top:22px;
+ width: 110px;
+ height: 31px;
+ border:2px solid black;
+ border-radius:4px;
+ background-color: white;
+ font-family:'Tioem-Handwritten';
+ font-size:24px;
+ 
+
+}
+
+.container{
+	text-align: center;
+}
+ul{
+	list-style-type:none;
+}
+.str{
+	position: relative;
+	top: -28px;
+	left: 30px;
+	font-size:24px;
+	width: 300px;
+}
+body{
+font-family:'Tioem-Handwritten';
+font-weight:normal;
+font-style: normal;
+}
+alert{}
