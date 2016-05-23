@@ -6,22 +6,24 @@ src: local('Tioem-Handwritten'), url('Tioem-Handwritten.woff') format('woff');
 }
 
 .border{
-
+	overflow-y:scroll;
 	border: 3px dotted black;
 	width: 400px;
-
-}
-.frame{
-	height:900px;
-
-
-}
-iframe{
-	width: 400px;
 	height: 300px;
-	background-size: 400px;
+}
+.content{
+	position: relative;
+	top: 15px;
+}
+.fon{	
+	position: relative;
+	top: -15px;
+	width: 383px;
+	height: 605px;
+	background-size: 66.49999999px;
 	background-color: #F3F3F3;
-	background-image:linear-gradient(-45deg,transparent 5%, #EAEAEA 5%,
+	background-image:linear-gradient(-45deg,#EAEAEA 0%, transparent 0%,
+											transparent 5%, #EAEAEA 5%,
 											#EAEAEA 10%, transparent 10%,
 											transparent 15%, #EAEAEA 15%,
 											#EAEAEA 20%, transparent 20%, 
@@ -41,7 +43,7 @@ iframe{
 											#EAEAEA 90%, transparent 90%,
 											transparent 95%, #EAEAEA 95%,
 											#EAEAEA 100%, transparent 100%);
-	}
+}
 
 
 h1{
@@ -52,28 +54,26 @@ h1{
 	
 }
 #iputToDo{
-border-radius:4px; 
-width: 290px;
-height: 25px;
-border:2px solid black;
-font-family:'Tioem-Handwritten';
-font-size:24px;
-position: relative;
-top:20px;
+	border-radius:4px; 
+	width: 290px;
+	height: 25px;
+	border:2px solid black;
+	font-family:'Tioem-Handwritten';
+	font-size:24px;
+	position: relative;
+	top:20px;
 }
 
 button{
-	position: relative;
-top:22px;
- width: 110px;
- height: 31px;
- border:2px solid black;
- border-radius:4px;
- background-color: white;
- font-family:'Tioem-Handwritten';
- font-size:24px;
- 
-
+ 	position: relative;
+ 	top:22px;
+ 	width: 110px;
+ 	height: 31px;
+ 	border:2px solid black;
+ 	border-radius:4px;
+ 	background-color: white;
+ 	font-family:'Tioem-Handwritten';
+ 	font-size:24px;
 }
 
 .container{
@@ -85,13 +85,18 @@ ul{
 .str{
 	position: relative;
 	top: -28px;
-	left: 30px;
+	left: 0px;
 	font-size:24px;
 	width: 300px;
+	text-align: left;
 }
 body{
-font-family:'Tioem-Handwritten';
-font-weight:normal;
-font-style: normal;
+	font-family:'Tioem-Handwritten';
+	font-weight:normal;
+	font-style: normal;
 }
-alert{}
+
+.check{
+	position: relative;
+	left: -170px;
+}

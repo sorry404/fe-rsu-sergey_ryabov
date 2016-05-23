@@ -1,8 +1,8 @@
 var worker = (function() {
 
-window.top.document.getElementById("button").onclick = function show_confirm()
+document.getElementById("button").onclick = function show_confirm()
 {
-var r=confirm("Are you sure want to add nev ToDo item: "+window.top.document.getElementById('iputToDo').value+"?");
+var r=confirm("Are you sure want to add nev ToDo item: "+document.getElementById('iputToDo').value+"?");
 if (r==true)
 {
 addText();
@@ -13,7 +13,7 @@ else
 
 var count = 0; // счетчик
 function addText(){ 
-	var textItem = window.top.document.getElementById('iputToDo').value;
+	var textItem = document.getElementById('iputToDo').value;
 	
 	var list = document.getElementById("list");				//берем элемент list
 	var item = document.createElement('li');				//создаем item
@@ -21,6 +21,7 @@ function addText(){
 
 	var input = document.createElement('input');			//создаем input
 	input.type="checkbox";									//присваемваем тип checkbox
+	input.className= "check"
 	var div = document.createElement('div');				//создаем див
 	div.className="str";									//присваемваем class str
 	
